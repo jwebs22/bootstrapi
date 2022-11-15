@@ -18,7 +18,16 @@
             Part 1: Random Dog Generator
         </h1>
         <div class="api-content">
-            [INSERT RANDOM DOG GENERATOR HERE]
+           
+            <div class="card" style="width: 18rem;">
+                <img src=data.message class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Random Dog Generator</h5>
+                  <p class="card-text">Click on Fetch! for a new photo!</p>
+                  <button id="dogButton" type="button" class="btn btn-outline-success">Fetch!</button>
+                </div>
+              </div>
+
         </div>
     </div>
 
@@ -27,8 +36,56 @@
             Part 2: Weather App
         </h1>
         <div class="api-content">
-            [INSERT WEATHER APP HERE]
+
+            <form>
+                <div class="mb-3">
+                  <label class="form-label">City:</label>
+                  <input id="cityInput" type="text" class="form-control" autocomplete="off" placeholder="Type City Here">
+                  <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                </div>
+               
+                <button id="weatherButton" class="btn btn-outline-success">Submit</button>
+              </form>
+
+              <div id="display">
+
+                <h5>City:</h5>
+                <p id="city"></p>
+
+                <h5>Temperature:</h5>
+                <p id="temp"></p>
+
+                <h5>Wind:</h5>
+                <p id="wind"></p>
+
+                <h5>Description:</h5>
+                <p id="desc"></p>
+                
+              </div>
+
         </div>
+    </div>
+
+    <div class="api-section">
+        <h1>
+            Part 3: Random Cat Facts
+        </h1>
+        <div class="api-content">
+           
+            <div class="card">
+                <div class="card-body">
+
+                <p id="factDisplay"></p> 
+                    
+                </div>
+            </div>
+            <br>
+            <button id="catButton" type="button" class="btn btn-outline-success">Give Me More Facts!</button>
+              
+            
+
+        </div>
+
     </div>
 
     <script src="main.js"></script>
