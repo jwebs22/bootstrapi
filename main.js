@@ -41,11 +41,10 @@ let city = document.querySelector("#city");
 button2.addEventListener("click", function(event)
 {
     event.preventDefault();
+    let url = `https://goweather.herokuapp.com/weather/${userInput.value}`
     console.log(userInput.value);
 
-    //I cannot get encodeURI() to work, everytime I do it messes up.
-    //Thoughts?
-    fetch(`https://goweather.herokuapp.com/weather/${userInput.value}`)
+    fetch(encodeURI(url))
     .then(function(response)
     {
         return response.json()
