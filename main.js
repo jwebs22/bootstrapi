@@ -37,6 +37,7 @@ let temp = document.querySelector("#temp");
 let wind = document.querySelector("#wind");
 let desc = document.querySelector("#desc");
 let city = document.querySelector("#city");
+let fore = document.querySelector("#fore");
 
 button2.addEventListener("click", function(event)
 {
@@ -55,7 +56,10 @@ button2.addEventListener("click", function(event)
         temp.innerText = data.temperature;
         wind.innerText = data.wind;
         desc.innerText = data.description;
+        fore.innerText = `Temperature: ${data.forecast[0].temperature}, Wind: ${data.forecast[0].wind}`;
 
+        console.log(data.forecast);
+        console.log(data.forecast[0]);
         userInput.value = "";
     })
 })
